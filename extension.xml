@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
  <software>
      <metadata>
-         <name>Owner</name>
+         <name>eZ Legacy Owner</name>
          <version>[EXTENSION_VERSION]</version>
          <copyright>Copyright (C) 2008-2011 Kristof Coomans</copyright>
          <license>[EXTENSION_LICENSE]</license>
