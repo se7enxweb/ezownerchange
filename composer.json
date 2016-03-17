@@ -1,7 +1,8 @@
 {
     "name": "kaliop/ezownerchange",
     "description": "Fork of owner change ez publish legacy extension made by https://github.com/KristofRide",
-    "type": "eZ Publish Legacy Extension",
+    "type": "ezpublish-legacy-extension",
+    "minimum-stability": "dev",
     "require": {
         "ezsystems/ezpublish-legacy-installer": "*"
     }
