@@ -1,9 +1,28 @@
 {
-    "name": "kaliop/ezownerchange",
-    "description": "Fork of owner change ez publish legacy extension made by https://github.com/KristofRide",
+    "name": "se7enxweb/ezownerchange",
+    "description": "eZ Publish Legacy extension which provides a simple solution for changing a content node creator field with the user selected. Great for smart developers!",
     "type": "ezpublish-legacy-extension",
+    "keywords": [ "eZ Publish", "eZ Publish Legacy", "eZ Publish Platform", "Object", "Node", "Content", "Change Owner", "Owner Change", "extension" ],
+    "homepage": "https://github.com/se7enxweb/ezownerchange",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name" : "7x",
+            "homepage": "https://se7enx.com",
+            "email": "info@se7enx.com",
+            "role": "Developer"
+        },
+	{
+            "name" : "Kristof Coomans",
+            "role": "Author"
+        }
+    ],
     "minimum-stability": "dev",
     "require": {
-        "ezsystems/ezpublish-legacy-installer": "*"
+        "php": ">=5.0.0",
+        "se7enxweb/ezpublish-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "ezownerchange"
     }
 }
