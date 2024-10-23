@@ -9,10 +9,15 @@ $ViewList['change'] = array(
                                 'params' => array( 'ObjectID', ),
                                 'unordered_params' => array( 'group' => 'StartNode' ),
                                 'ui_context' => 'edit',
+				'navigation_part' => array(),
+                                'default_navigation_part' => 'ezcontentnavigationpart',
                                 'post_actions' => array( 'BrowseActionName' ),
                                 'single_post_actions' => array( 'BrowseCancelButton' => 'Cancel' ),
                                 'post_action_parameters' => array(
                                     'Cancel' => array( 'CancelURI' => 'BrowseCancelURI' )
                                 )
                            );
+
+$FunctionList['change'] = array();
+
 ?>

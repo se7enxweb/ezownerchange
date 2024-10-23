@@ -8,6 +8,9 @@ $functionName = $Params['FunctionName'];
 
 $objectID = $Params['ObjectID'];
 
+$db = eZDB::instance();
+$db->begin();
+
 // if browse was cancelled, redirect
 if ( $Module->isCurrentAction( 'Cancel' ) )
 {
@@ -40,6 +43,16 @@ if ( $Module->isCurrentAction( 'ChangeOwner' ) )
         $object->setAttribute( 'owner_id', $selectedObjectIDArray[0] );
         $object->store();
 
+	$version = $object->createNewVersionIn( false );
+
+	$version->setAttribute( 'creator_id', $selectedObjectIDArray[0] );
+	$version->store();
+
+	// publish the newly created object
+        eZOperationHandler::execute( 'content', 'publish', array( 'object_id' => $object->attribute( 'id' ),
+                                                                  'version'   => $version->attribute( 'version' ) ) );
+
+
         // Clean up content cache
         eZContentCacheManager::clearContentCache( $object->attribute( 'id' ) );
     }
@@ -55,27 +68,35 @@ else
     $browseParams['content'] = array( 'object_id' => $objectID );
 
     $currentOwner = $object->attribute( 'owner' );
+ 
+    /* Note: This features causes problems for more users than it really solves so we remove it without deletion.
 
-    if ( $currentOwner )
+    if ( currentOwner )
     {
         $currentOwnerNodes = $currentOwner->attribute( 'assigned_nodes' );
 
-        $ignoreNodeIDList = array();
+	$ignoreNodeIDList = array();
+
         foreach ( $currentOwnerNodes as $currentOwnerNode )
         {
             $ignoreNodeIDList[] = $currentOwnerNode->attribute( 'node_id' );
-        }
 
+        }
+	
         $browseParams['ignore_nodes_select'] = $ignoreNodeIDList;
     }
+    */
 
     if ( $Params['StartNode'] )
     {
         $browseParams['start_node'] = $Params['StartNode'];
         $browseParams['from_page'] .= '/group/' . $Params['StartNode'];
     }
+
     $browseParams['cancel_page'] = $http->sessionVariable( 'LastAccessesURI' );
     return eZContentBrowse::browse( $browseParams, $Module );
 }
+
+$db->commit();
 
 ?>
