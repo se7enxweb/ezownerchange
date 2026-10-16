@@ -1,14 +1,8 @@
-<?php
-
-/*
+<?php /* #?ini charset="utf-8"?
 
 [ExtensionSettings]
 DesignExtensions[]=ezownerchange
 
-[StylesheetSettings]
-BackendCSSFileList[]=owner.css
-CSSFileList[]=owner.css
+# Since 1.4 the pages use the shared administration components (components.css); owner.css is no longer loaded.
 
-*/
-
-?>
+*/ ?>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  The ezownerchange unit tests: the request rules, the plan (what a preview shows and a confirmation changes), the
+  audit branch, the translations and the template rules. No database, no request, no Exponential root needed.
+  Run (from extension/ezownerchange): php ../../vendor/bin/phpunit
+  or with any PHPUnit 10 or later: phpunit -c phpunit.xml.dist
+-->
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         bootstrap="tests/bootstrap.php"
+         colors="false"
+         cacheDirectory="tests/.phpunit.cache"
+         failOnWarning="true"
+         failOnRisky="true"
+         beStrictAboutOutputDuringTests="true">
+    <testsuites>
+        <testsuite name="unit">
+            <directory suffix="Test.php">tests/unit</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

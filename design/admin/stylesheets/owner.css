@@ -1,8 +1,2 @@
-
-/* Context menu in admin2 design */
-#ezopt-menu-change-owner {
-  background-position:5% 50%;
-  background-repeat:no-repeat;
-  padding-left:1em;
-  background-image:url("../images/owner/change.png");
-}
+/* ezownerchange 1.4 draws its pages with the shared administration components and needs no stylesheet of its
+   own. This file stays (empty) for sites whose own design.ini still names owner.css. */

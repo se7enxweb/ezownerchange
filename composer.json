@@ -1,28 +1,32 @@
 {
     "name": "se7enxweb/ezownerchange",
-    "description": "eZ Publish Legacy extension which provides a simple solution for changing a content node creator field with the user selected. Great for smart developers!",
+    "description": "ezownerchange changes the owner of content objects in Exponential: one object or a whole subtree, from the administration with a preview and a confirmation, or from the command line with --dry-run. Permission checked, audited, search index and caches kept current.",
     "type": "ezpublish-legacy-extension",
-    "keywords": [ "eZ Publish", "eZ Publish Legacy", "eZ Publish Platform", "Object", "Node", "Content", "Change Owner", "Owner Change", "extension" ],
+    "keywords": [ "Exponential", "Exponential Legacy", "extension", "content", "object", "node", "subtree", "owner", "change owner", "owner change" ],
     "homepage": "https://github.com/se7enxweb/ezownerchange",
     "license": "GPL-2.0-or-later",
     "authors": [
         {
-            "name" : "7x",
+            "name": "7x",
             "homepage": "https://se7enx.com",
             "email": "info@se7enx.com",
             "role": "Developer"
         },
-	{
-            "name" : "Kristof Coomans",
-            "role": "Author"
+        {
+            "name": "Kristof Coomans",
+            "role": "Original author"
         }
     ],
-    "minimum-stability": "dev",
     "require": {
-        "php": ">=5.0.0",
+        "php": ">=8.0",
         "se7enxweb/ezpublish-legacy-installer": "*"
     },
     "extra": {
         "ezpublish-legacy-extension-name": "ezownerchange"
+    },
+    "support": {
+        "issues": "https://github.com/se7enxweb/ezownerchange/issues",
+        "source": "https://github.com/se7enxweb/ezownerchange",
+        "docs": "https://github.com/se7enxweb/ezownerchange/tree/master/doc"
     }
 }
