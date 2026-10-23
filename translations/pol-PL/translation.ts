@@ -5,7 +5,7 @@
     <name>extension/ezownerchange</name>
     <message>
         <source>Change owner</source>
-        <translation>Zmień właściciela</translation>
+        <translation>Zmienić właściciela</translation>
     </message>
     <message>
         <source>%count objects could not be changed; nothing of their batch was written.</source>
@@ -21,7 +21,7 @@
     </message>
     <message>
         <source>Change the owner of 1 object</source>
-        <translation>Zmień właściciela 1 obiektu</translation>
+        <translation>Zmienić właściciela 1 obiektu</translation>
     </message>
     <message>
         <source>A subtree of more than %limit objects is changed with the command line script, see the documentation.</source>
@@ -33,23 +33,23 @@
     </message>
     <message>
         <source>Back to the object</source>
-        <translation>Wróć do obiektu</translation>
+        <translation>Wrócić do obiektu</translation>
     </message>
     <message>
         <source>Cancel</source>
-        <translation>Anuluj</translation>
+        <translation>Anulować</translation>
     </message>
     <message>
         <source>Change the owner of %count objects</source>
-        <translation>Zmień właściciela obiektów (%count)</translation>
+        <translation>Zmienić właściciela obiektów (%count)</translation>
     </message>
     <message>
         <source>Choose another owner</source>
-        <translation>Wybierz innego właściciela</translation>
+        <translation>Wybrać innego właściciela</translation>
     </message>
     <message>
         <source>Choose the new owner of %object_name</source>
-        <translation>Wybierz nowego właściciela dla %object_name</translation>
+        <translation>Wybrać nowego właściciela dla %object_name</translation>
     </message>
     <message>
         <source>Current owner</source>
@@ -157,7 +157,7 @@
     </message>
     <message>
         <source>Update preview</source>
-        <translation>Odśwież podgląd</translation>
+        <translation>Odświeżyć podgląd</translation>
     </message>
     <message>
         <source>What changes</source>
