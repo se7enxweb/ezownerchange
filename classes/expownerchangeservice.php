@@ -15,7 +15,7 @@
  * current version; PublishNewVersion=enabled publishes a new version with the new owner as its creator, the way
  * releases up to 1.3 did (slower, runs the publish workflows, adds a version to the history).
  *
- * @copyright Copyright (C) 1998 - 2026 7x and the Exponential Foundation. All rights reserved.
+ * @copyright Copyright (C) 1998 - 2026 Exponential Foundation and 7x. All rights reserved.
  * @license GNU General Public License v2.0 (or any later version)
  * @package ezownerchange
  */

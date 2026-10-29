@@ -11,7 +11,7 @@
  * nothing. The command line is trusted like the other maintenance scripts: it changes every object the request
  * reaches, without the per-object content/edit check of the administration. Guide: extension/ezownerchange/doc/cli.md
  *
- * @copyright Copyright (C) 1998 - 2026 7x and the Exponential Foundation. All rights reserved.
+ * @copyright Copyright (C) 1998 - 2026 Exponential Foundation and 7x. All rights reserved.
  * @license GNU General Public License v2.0 (or any later version)
  * @package ezownerchange
  */

@@ -101,5 +101,5 @@ cd extension/ezownerchange && php ../../vendor/bin/phpunit
 
 ## License
 
-GNU General Public License v2.0 or any later version; see [LICENSE](LICENSE). Copyright (C) 1998 - 2026 7x.
+GNU General Public License v2.0 or any later version; see [LICENSE](LICENSE). Copyright (C) 1998 - 2026 Exponential Foundation and 7x. All rights reserved.
 Based on the owner extension by Kristof Coomans (Copyright (C) 2006 SCK-CEN).

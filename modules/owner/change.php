@@ -8,7 +8,7 @@
  * 3. Confirm (a POST with the preview's fingerprint) builds the plan again and changes the owners only when it is
  *    still what was previewed; otherwise the new preview is shown with a notice.
  *
- * @copyright Copyright (C) 1998 - 2026 7x and the Exponential Foundation. All rights reserved.
+ * @copyright Copyright (C) 1998 - 2026 Exponential Foundation and 7x. All rights reserved.
  * @license GNU General Public License v2.0 (or any later version)
  * @package ezownerchange
  */
